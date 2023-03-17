@@ -37,7 +37,7 @@ def cows_and_bulls():
         bulls = 0                                                       # reset bulls
         guess = list(input("enter a 4 digit number:"))                  # ask for another number
         if num_guesses > 10:                                            # if guesses gets over 10
-            give_up = input("do you give up?")                          # offer a way out of the mysery
+            give_up = input("if you want to give up type yes")          # offer a way out of the mysery
             if give_up == "yes":                                        # if yes
                 print("the number was {}".format("".join(random_num)))  # print out the random number
                 break
