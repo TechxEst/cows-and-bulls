@@ -7,8 +7,8 @@ def cows_and_bulls():
     num_guesses = 0                                                     # initiate count of guesses
     num_length = 4                                                      # length of random number
 
-    random_num = random.sample(list(string.digits), 4)                  # create a random number of 4 digits from all digits
-    guess = list(input("enter a 4 digit number:"))                      # ask user to guess
+    random_num = random.sample(list(string.digits), 4)                  # create a random list of 4 digits from all digits
+    guess = list(input("enter a 4 digit number:"))                      # create a list of 4 digits from the user
 
     while guess != random_num:                                          # while they aren't the same                                    
         checkpoint = 0                                                  # initiate the checkpoint
@@ -46,4 +46,4 @@ def cows_and_bulls():
     else:                                                               # when guess and random number are the same 
         print("you got it in {} guesses".format(num_guesses))           # print the number of guesses they got it in
 
-cows_and_bulls()
+cows_and_bulls()                                                        # run it
